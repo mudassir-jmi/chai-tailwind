@@ -1,50 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 <body class="chai-bg-white">
-    <header class="chai-flex chai-justify-center chai-items-center chai-p-4 chai-border-b chai-border-gray">
-        <div class="chai-flex chai-items-center">
-            <div class="chai-fs-24 chai-text-black chai-mr-4">ChaiTailwind</div>
-            <nav class="chai-flex">
-                <a href="#" class="chai-p-2 chai-text-black">Docs</a>
-                <a href="#" class="chai-p-2 chai-text-black">Components</a>
-                <a href="#" class="chai-p-2 chai-text-black">Blog</a>
-                <a href="#" class="chai-p-2 chai-text-black">Showcase</a>
+
+    <!-- Navbar -->
+    <header class="chai-flex chai-justify-center chai-items-center chai-p-20 chai-border-b chai-border-gray">
+
+        <div class="chai-flex chai-justify-center chai-items-center chai-maxw-1200 chai-w-1200">
+
+            <div class="chai-fs-32 chai-fw-700 chai-text-black">
+                ChaiTailwind
+            </div>
+
+            <nav class="chai-flex chai-gap-20 chai-ml-20">
+                <a href="#" class="chai-text-black">Docs</a>
+                <a href="#" class="chai-text-black">Components</a>
+                <a href="#" class="chai-text-black">Pricing</a>
+                <a href="#" class="chai-text-black">Showcase</a>
             </nav>
+
+            <button class="chai-bg-F97316 chai-text-white chai-p-12 chai-radius-8 chai-ml-20 chai-cursor-pointer chai-transition chai-hoverbg-000000">
+                Get Started
+            </button>
+
         </div>
-        <button class="chai-bg-F97316 chai-text-white chai-p-2 chai-radius-4">Get started</button>
+
     </header>
 
-    <section class="chai-bg-F97316 chai-text-white chai-p-20 chai-text-center chai-flex chai-flex-col chai-items-center">
-        <h1 class="chai-fs-48 chai-mb-4">Rapidly build modern websites without ever leaving your HTML.</h1>
-        <p class="chai-fs-20 chai-mb-8">A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.</p>
-    </section>
 
-    <section class="chai-p-20 chai-text-center">
-        <h2 class="chai-fs-32 chai-mb-10">Why ChaiTailwind?</h2>
-        <div class="chai-flex">
-            <div class="chai-bg-gray chai-p-10 chai-m-5 chai-radius-10 chai-text-center">
-                <h3 class="chai-fs-24">Utility-First</h3>
-                <p>Compose designs with utility classes.</p>
+    <!-- Hero Section -->
+    <section class="chai-bg-F97316 chai-text-white chai-p-80 chai-text-center">
+
+        <div class="chai-maxw-900 chai-mx-auto">
+
+            <div class="chai-fs-64 chai-fw-700 chai-mb-20">
+                Build Modern Websites Without Writing CSS
             </div>
-            <div class="chai-bg-gray chai-p-10 chai-m-5 chai-radius-10 chai-text-center">
-                <h3 class="chai-fs-24">No Build Step</h3>
-                <p>Works directly in the browser.</p>
+
+            <div class="chai-fs-24 chai-mb-40">
+                ChaiTailwind is a lightweight utility-first CSS engine powered entirely by JavaScript.
             </div>
-            <div class="chai-bg-gray chai-p-10 chai-m-5 chai-radius-10 chai-text-center">
-                <h3 class="chai-fs-24">Lightweight</h3>
-                <p>Only the styles you use.</p>
+
+            <div class="chai-flex chai-justify-center chai-gap-20">
+
+                <button class="chai-bg-black chai-text-white chai-p-16 chai-radius-8 chai-cursor-pointer chai-transition chai-hoverbg-333333">
+                    Start Building
+                </button>
+
+                <button class="chai-bg-white chai-text-black chai-p-16 chai-radius-8 chai-cursor-pointer">
+                    View Docs
+                </button>
+
             </div>
+
         </div>
+
     </section>
 
-    <footer class="chai-bg-black chai-text-white chai-p-10 chai-text-center">
-        <p>&copy; 2026 ChaiTailwind. Made with JavaScript.</p>
-    </footer>
 
-    <script src="chai.js"></script>
+    <!-- Features -->
+    <section class="chai-p-80">
+
+        <div class="chai-maxw-1200 chai-mx-auto">
+
+            <div class="chai-text-center chai-fs-48 chai-fw-700 chai-mb-60">
+                Why Developers Love It
+            </div>
+
+            <div class="chai-flex chai-gap-30">
+
+                <div class="chai-bg-F5F5F5 chai-p-30 chai-radius-16">
+                    <div class="chai-fs-28 chai-fw-700 chai-mb-10">
+                        Utility First
+                    </div>
+
+                    <div class="chai-fs-18">
+                        Build any layout rapidly using reusable utility classes directly in HTML.
+                    </div>
+                </div>
+
+                <div class="chai-bg-F5F5F5 chai-p-30 chai-radius-16">
+                    <div class="chai-fs-28 chai-fw-700 chai-mb-10">
+                        No Build Tools
+                    </div>
+
+                    <div class="chai-fs-18">
+                        Works instantly in the browser without webpack, Vite, or PostCSS.
+                    </div>
+                </div>
+
+                <div class="chai-bg-F5F5F5 chai-p-30 chai-radius-16">
+                    <div class="chai-fs-28 chai-fw-700 chai-mb-10">
+                        Tiny & Fast
+                    </div>
+
+                    <div class="chai-fs-18">
+                        Lightweight runtime parser that dynamically applies styles.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Code Showcase -->
+    <section class="chai-bg-black chai-text-white chai-p-80">
+
+        <div class="chai-maxw-1000 chai-mx-auto">
+
+            <div class="chai-fs-48 chai-fw-700 chai-text-center chai-mb-40">
+                Write Less CSS
+            </div>
+
+            <div class="chai-bg-1E1E1E chai-p-30 chai-radius-16">
+
+<pre class="chai-fs-18">
+&lt;button class="chai-bg-F97316
+chai-text-white
+chai-p-16
+chai-radius-8"&gt;
+    Click Me
+&lt;/button&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="chai-p-80 chai-text-center">
+
+        <div class="chai-fs-48 chai-fw-700 chai-mb-20">
+            Start Building Today
+        </div>
+
+        <div class="chai-fs-22 chai-mb-40">
+            Create modern websites with your own utility-first engine.
+        </div>
+
+        <button class="chai-bg-F97316 chai-text-white chai-p-20 chai-radius-10 chai-fs-20 chai-cursor-pointer chai-transition chai-hoverbg-000000">
+            Launch Project
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="chai-bg-black chai-text-white chai-p-30 chai-text-center">
+
+        <div class="chai-fs-18">
+            © 2026 ChaiTailwind — Built with Vanilla JavaScript
+        </div>
+
+    </footer>
+<script src="chai.js"></script>
 </body>
-</html>

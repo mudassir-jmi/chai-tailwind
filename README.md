@@ -33,10 +33,6 @@ Use classes like:
 
 Open `index.html` in a browser to see the demo.
 
-## GitHub
+## Screenshot
 
-[Repository Link]
-
-## Hosted
-
-[Live Demo Link]
+![ScreenShort](chai-tailwind.png)
