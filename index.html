@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai Tailwind</title>
+    <title>ChaiTailwind</title>
 </head>
-<body>
-    <div class="chai-bg-red chai-p-20 chai-text-center chai-text-white chai-fs-24 chai-radius-10">
-        Hello ChaiTailwind!
-    </div>
-    <div class="chai-bg-blue chai-m-10 chai-text-left chai-border chai-radius-5 chai-w-200 chai-h-100">
-        This is a demo box.
-    </div>
-    <div class="chai-flex">
-        <div class="chai-bg-green chai-p-10 chai-text-center">Item 1</div>
-        <div class="chai-bg-yellow chai-p-10 chai-text-center">Item 2</div>
-    </div>
+<body class="chai-bg-white">
+    <header class="chai-flex chai-justify-center chai-items-center chai-p-4 chai-border-b chai-border-gray">
+        <div class="chai-flex chai-items-center">
+            <div class="chai-fs-24 chai-text-black chai-mr-4">ChaiTailwind</div>
+            <nav class="chai-flex">
+                <a href="#" class="chai-p-2 chai-text-black">Docs</a>
+                <a href="#" class="chai-p-2 chai-text-black">Components</a>
+                <a href="#" class="chai-p-2 chai-text-black">Blog</a>
+                <a href="#" class="chai-p-2 chai-text-black">Showcase</a>
+            </nav>
+        </div>
+        <button class="chai-bg-F97316 chai-text-white chai-p-2 chai-radius-4">Get started</button>
+    </header>
+
+    <section class="chai-bg-F97316 chai-text-white chai-p-20 chai-text-center chai-flex chai-flex-col chai-items-center">
+        <h1 class="chai-fs-48 chai-mb-4">Rapidly build modern websites without ever leaving your HTML.</h1>
+        <p class="chai-fs-20 chai-mb-8">A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.</p>
+        <div class="chai-flex">
+            <button class="chai-bg-white chai-text-F97316 chai-p-4 chai-radius-4 chai-mr-4">Get started</button>
+            <button class="chai-bg-transparent chai-text-white chai-border chai-border-white chai-p-4 chai-radius-4">Try the playground</button>
+        </div>
+    </section>
+
+    <section class="chai-p-20 chai-text-center">
+        <h2 class="chai-fs-32 chai-mb-10">Why ChaiTailwind?</h2>
+        <div class="chai-flex">
+            <div class="chai-bg-gray chai-p-10 chai-m-5 chai-radius-10 chai-text-center">
+                <h3 class="chai-fs-24">Utility-First</h3>
+                <p>Compose designs with utility classes.</p>
+            </div>
+            <div class="chai-bg-gray chai-p-10 chai-m-5 chai-radius-10 chai-text-center">
+                <h3 class="chai-fs-24">No Build Step</h3>
+                <p>Works directly in the browser.</p>
+            </div>
+            <div class="chai-bg-gray chai-p-10 chai-m-5 chai-radius-10 chai-text-center">
+                <h3 class="chai-fs-24">Lightweight</h3>
+                <p>Only the styles you use.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="chai-bg-black chai-text-white chai-p-10 chai-text-center">
+        <p>&copy; 2026 ChaiTailwind. Made with JavaScript.</p>
+    </footer>
+
     <script src="chai.js"></script>
 </body>
 </html>

@@ -11,10 +11,29 @@ function applyChaiStyles() {
                 const parts = cls.split('-');
                 if (parts[1] === 'p' && parts.length === 3) {
                     el.style.padding = parts[2] + 'px';
+                } else if (parts[1] === 'p' && parts[2] === 't' && parts.length === 4) {
+                    el.style.paddingTop = parts[3] + 'px';
+                } else if (parts[1] === 'p' && parts[2] === 'b' && parts.length === 4) {
+                    el.style.paddingBottom = parts[3] + 'px';
+                } else if (parts[1] === 'p' && parts[2] === 'l' && parts.length === 4) {
+                    el.style.paddingLeft = parts[3] + 'px';
+                } else if (parts[1] === 'p' && parts[2] === 'r' && parts.length === 4) {
+                    el.style.paddingRight = parts[3] + 'px';
                 } else if (parts[1] === 'm' && parts.length === 3) {
                     el.style.margin = parts[2] + 'px';
+                } else if (parts[1] === 'm' && parts[2] === 't' && parts.length === 4) {
+                    el.style.marginTop = parts[3] + 'px';
+                } else if (parts[1] === 'm' && parts[2] === 'b' && parts.length === 4) {
+                    el.style.marginBottom = parts[3] + 'px';
+                } else if (parts[1] === 'm' && parts[2] === 'l' && parts.length === 4) {
+                    el.style.marginLeft = parts[3] + 'px';
+                } else if (parts[1] === 'm' && parts[2] === 'r' && parts.length === 4) {
+                    el.style.marginRight = parts[3] + 'px';
                 } else if (parts[1] === 'bg' && parts.length >= 3) {
-                    const color = parts.slice(2).join('-');
+                    let color = parts.slice(2).join('-');
+                    if (/^[0-9a-fA-F]{6}$/.test(color)) {
+                        color = '#' + color;
+                    }
                     el.style.backgroundColor = color;
                 } else if (parts[1] === 'text') {
                     if (parts.length === 3) {
@@ -25,7 +44,11 @@ function applyChaiStyles() {
                             el.style.color = val;
                         }
                     } else if (parts.length > 3) {
-                        el.style.color = parts.slice(2).join('-');
+                        let color = parts.slice(2).join('-');
+                        if (/^[0-9a-fA-F]{6}$/.test(color)) {
+                            color = '#' + color;
+                        }
+                        el.style.color = color;
                     }
                 } else if (parts[1] === 'fs' && parts.length === 3) {
                     el.style.fontSize = parts[2] + 'px';
@@ -45,6 +68,12 @@ function applyChaiStyles() {
                     el.style.width = parts[2] + 'px';
                 } else if (parts[1] === 'h' && parts.length === 3) {
                     el.style.height = parts[2] + 'px';
+                } else if (parts[1] === 'justify' && parts[2] === 'center' && parts.length === 3) {
+                    el.style.justifyContent = 'center';
+                } else if (parts[1] === 'items' && parts[2] === 'center' && parts.length === 3) {
+                    el.style.alignItems = 'center';
+                } else if (parts[1] === 'flex' && parts[2] === 'col' && parts.length === 3) {
+                    el.style.flexDirection = 'column';
                 }
                 // Remove the class after applying style
                 el.classList.remove(cls);
